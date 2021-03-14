@@ -9,14 +9,12 @@ namespace ApiSencilla.Context
 {
     public class AplicationDbContext:DbContext
     {
-
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options): base(options)
         {
 
         }
 
-
-        public DbSet<Prestamo> Prestamos { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Prestamo> prestamos { get; set; }
+        public DbSet<Cliente> clientes { get; set; }
     }
 }

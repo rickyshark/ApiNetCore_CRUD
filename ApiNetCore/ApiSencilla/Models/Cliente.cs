@@ -20,6 +20,7 @@ namespace ApiSencilla.Models
         public string Direccion { get; set; }
 
         [Required]
+        [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$",
                    ErrorMessage = "El formato del telefono no es valido!!")]
         public string Telefono { get; set; }
